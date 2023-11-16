@@ -52,7 +52,7 @@ const Gallery = () => {
   return (
     <div>
       <h2 className="text-[18px] font-[600] mb-3 ">Contact info</h2>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid grid-cols-3 gap-10 lg:gap-4'>
         {
           images?.map(img => {
             return (
