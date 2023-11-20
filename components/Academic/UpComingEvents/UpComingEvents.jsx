@@ -9,7 +9,7 @@ const UpComingEvents = () => {
     <div className='my-16 '>
       <h2 className='text-center text-[32px] font-[600] mb-5'>
         Upcomming Events</h2>
-      <div className='border-2 border-[#999] rounded-md p-8'>
+      <div className='border border-[#999] rounded-md p-8'>
         <div className='grid grid-cols-4 gap-10 mb-8 '>
           <div className='flex items-center gap-10  col-span-3 divide-x-2'>
             <div>

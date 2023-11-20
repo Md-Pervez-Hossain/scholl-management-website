@@ -4,7 +4,7 @@ import EveningPic from "../../../assets/eveningShift.png"
 
 const SchollEveningShift = () => {
   return (
-    <div className='grid md:grid-cols-2 gap-10 items-center rounded-e-md border-2 border-[#40282C]'>
+    <div className='grid md:grid-cols-2 gap-10 items-center rounded-e-md border border-[#40282C]'>
 
       <div className='relative'>
         <Image src={EveningPic} sizes="(max-width: 768px) 100vw, 33vw" alt='' />

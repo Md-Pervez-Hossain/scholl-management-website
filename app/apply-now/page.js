@@ -1,9 +1,10 @@
+import ApplicationForm from '@/components/ApplicationForm/ApplicationForm';
 import React from 'react';
 
 const ApplyNowPage = () => {
   return (
     <div>
-      <h2>Applay Now Page</h2>
+      <ApplicationForm />
     </div>
   );
 };

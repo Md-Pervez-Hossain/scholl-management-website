@@ -4,7 +4,7 @@ import morningShift from "../../../assets/morningShift.png"
 
 const SchoolMorningShift = () => {
   return (
-    <div className='grid md:grid-cols-2 gap-10 items-center rounded-s-md border-2 border-[#40282C] my-5'>
+    <div className='grid md:grid-cols-2 gap-10 items-center rounded-s-md border border-[#40282C] my-5'>
       <div className='px-8'>
         <h2 className='text-[#40282C] text-[32px] font-[500]   mb-5' >Morning shift</h2>
         <p>Teacher portals often include tools for lesson planning, allowing educators to create and organize lesson plans, resources, and assessments.

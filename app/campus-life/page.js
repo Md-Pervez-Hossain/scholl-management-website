@@ -1,9 +1,10 @@
+import Campus from '@/components/Campus/Campus';
 import React from 'react';
 
 const CampusLifePage = () => {
   return (
     <div>
-      <h2>Campus Life</h2>
+      <Campus />
     </div>
   );
 };
