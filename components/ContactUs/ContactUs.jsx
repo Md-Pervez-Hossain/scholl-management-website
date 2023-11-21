@@ -3,9 +3,9 @@ import ContactForm from './ContactForm';
 
 const ContactUs = () => {
   return (
-    <div className='md:w-9/12 mx-auto my-16'>
+    <div className='md:w-9/12 px-5 md:px-0 mx-auto my-16'>
       <h2 className='text-[35px] font-[600] text-center mb-5'>Contact us</h2>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
         <div className='border border-[#999] rounded-md p-8  text-center'>
           <div className='mb-3 flex items-center justify-center'> <svg xmlns="http://www.w3.org/2000/svg" width="101" height="100" viewBox="0 0 101 100" fill="none">
             <circle cx="50.6699" cy="50" r="49" stroke="#A65132" stroke-width="2" />
@@ -31,7 +31,7 @@ const ContactUs = () => {
           <p>Customer Service:
             mhsc926@gmail.com</p>
         </div>
-        <div className='border border-[#999] rounded-md p-8 text-center'>
+        <div className='border border-[#999] rounded-md p-8 text-center md:col-span-3 lg:col-auto'>
           <div className='mb-3 flex items-center justify-center'><svg xmlns="http://www.w3.org/2000/svg" width="101" height="100" viewBox="0 0 101 100" fill="none">
             <circle cx="50.6699" cy="50" r="49" stroke="#A65132" stroke-width="2" />
             <path d="M70.6699 44V56C70.6699 61 69.6699 64.5 67.4299 66.76L54.6699 54L70.1299 38.54C70.4899 40.12 70.6699 41.92 70.6699 44Z" stroke="#A65132" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />

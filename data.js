@@ -15,3 +15,14 @@ export const classes = [
 ];
 export const blood_groups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 export const religionArray = ["Christianity", "Islam", "Hinduism", "Buddhism"];
+export const BoardsName = [
+  "Dhaka Board",
+  "Chittagong Board",
+  "Rajshahi Board",
+  "Jessore Board",
+  "Comilla Board",
+  "Barisal Board",
+  "Sylhet Board",
+  "Dinajpur Board",
+  "Mymensingh Board",
+];

@@ -16,7 +16,7 @@ const ContactForm = () => {
   return (
     <div className='border border-[#999] p-10 rounded-md' >
       <form onSubmit={handleSubmit(handleContact)}>
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='grid md:grid-cols-2 gap-5'>
           <div className='flex flex-col'>
             <label className='text-[18px] font-[500] mb-3'>Your Name</label>
             <input  {...register("name", { required: true })} placeholder='Enter Your Name' className='border border-[#999] px-4 py-3 rounded' />
@@ -39,7 +39,8 @@ const ContactForm = () => {
           <textarea  {...register("message", { required: true })} placeholder='Type Your Message' type='text' className='border border-[#999] px-4 py-3 rounded' />
         </div>
         <div className='flex items-center justify-center'>
-          <button className='bg-[#40282C] px-4 py-3 rounded-md text-white '>Submit Message</button></div>
+          <button className='bg-[#40282C] px-4 py-3 rounded-md text-white '>Submit Message</button>
+        </div>
 
       </form>
     </div>
