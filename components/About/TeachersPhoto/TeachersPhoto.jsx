@@ -90,9 +90,9 @@ const TeachersPhoto = () => {
   ]
 
   return (
-    <div className='w-9/12 mx-auto my-16'>
+    <div className='md:w-9/12 px-5 md:px-0 mx-auto my-16'>
       <h2 className='text-[32px] font-[600] text-center mb-8'>Teachers Photo</h2>
-      <div className='grid grid-cols-4 gap-8'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-8'>
         {
           teacherPhotoArray?.map(photo => {
             return (

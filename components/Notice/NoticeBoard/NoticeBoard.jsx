@@ -5,12 +5,12 @@ import Slider from './Slider';
 
 const NoticeBoard = () => {
   return (
-    <div className='w-9/12 mx-auto my-16 bg-[#FBC531] rounded px-16 py-16 grid md:grid-cols-3 gap-10 items-center'>
-      <div className='md:col-span-1'>
+    <div id="NoticeBoard" className='md:w-9/12 mx-auto my-16 bg-[#FBC531] rounded lg:p-16 p-5  grid grid-cols-3  gap-5 items-center'>
+      <div className=' col-span-3 lg:col-span-1'>
         <h2 className='text-[32px] font-[500]'>Our Notice Board</h2>
-        <Image width={250} height={200} src={noticePic} alt="" />
+        <Image style={{ objectFit: "contain" }} src={noticePic} alt="" />
       </div>
-      <div className=' col-span-3 md:col-span-2'>
+      <div className=' col-span-3 lg:col-span-2'>
         <Slider />
       </div>
     </div>

@@ -12,80 +12,91 @@ const Header = () => {
     return href === pathname;
   };
   return (
-    <div className="bg-[#40282C]">
+    <div className="bg-[#40282C] sticky top-0  z-50">
       <div className="w-9/12 mx-auto  text-white z-50 flex items-center justify-between gap-5 py-5 ">
 
-        <Image alt="" src={logo} width={90} height={90} />
+        <Image alt="" src={logo} width={70} height={70} />
 
         <NavigationMenu.Root>
-          <NavigationMenu.List className=' flex items-center gap-10 text-xl justify-end'>
+          <NavigationMenu.List className=' flex items-center flex-wrap gap-10 text-xl justify-end'>
             <NavigationMenu.Item>
-              <NavigationMenu.Link href="/" className={isActiveLink('/') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>
-                Home
+              <NavigationMenu.Link asChild>
+                <Link href="/" className={isActiveLink('/') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>Home</Link>
               </NavigationMenu.Link>
             </NavigationMenu.Item>
             <NavigationMenu.Item>
-              <NavigationMenu.Link href="/about" className={isActiveLink('/about') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>
-                About
-              </NavigationMenu.Link>
+              <NavigationMenu.Link asChild >
+                <Link href="/about" className={isActiveLink('/about') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''} >About</Link>
+              </NavigationMenu.Link >
             </NavigationMenu.Item>
             <NavigationMenu.Item className='relative z-50'>
-              <NavigationMenu.Trigger className='flex items-center gap-2 group '>
+              <NavigationMenu.Trigger >
 
-                <span> Academic</span> <RxChevronDown className=" text-2xl font-bold transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
+                <Link href="/academic" className='flex items-center gap-2 group '>
+                  <span> Academic</span> <RxChevronDown className=" text-2xl font-bold transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
+                </Link>
               </NavigationMenu.Trigger>
               <NavigationMenu.Content className=' text-[#40282C] bg-white shadow-2xl   p-5  text-start  w-[250px] data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-14 left-0  '>
                 <ul className="flex flex-col gap-5">
                   <li>
-                    <NavigationMenu.Link className="text-xl" href="/">
-                      Morning Shift
+                    <NavigationMenu.Link asChild >
+                      <Link href="/academic#SchoolMorningShift" className="text-xl" >Morning Shift</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link className="text-xl " href="/">
-                      Evening  Shift
+                    <NavigationMenu.Link asChild >
+                      <Link href="/academic#SchoolEveningShift" className="text-xl "> Evening  Shift</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link className="text-xl " href="/">
-                      Calender
+                    <NavigationMenu.Link asChild>
+                      <Link href="/" className="text-xl " > Calender</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link className="text-xl " href="/">
-                      UpComing Events
+                    <NavigationMenu.Link asChild  >
+                      <Link href="/academic#UpComingEvents" className="text-xl ">UpComing Events</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link className="text-xl " href="/">
-                      Notice Board
+                    <NavigationMenu.Link asChild>
+                      <Link href="/academic#NoticeBoard" className="text-xl ">Notice Board</Link>
                     </NavigationMenu.Link>
                   </li>
                 </ul>
               </NavigationMenu.Content>
             </NavigationMenu.Item>
             <NavigationMenu.Item className='relative z-50'>
-              <NavigationMenu.Trigger className='flex items-center gap-2 group '>
-                <span> Campus Life</span> <RxChevronDown className=" text-2xl font-bold transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
+              <NavigationMenu.Trigger >
+                <Link href="/campus-life" className='flex items-center gap-2 group '>
+                  <span> Campus Life</span> <RxChevronDown className=" text-2xl font-bold transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden /></Link>
               </NavigationMenu.Trigger>
               <NavigationMenu.Content className=' text-[#40282C] bg-white shadow-2xl   p-5  text-start absolute top-14 left-0 w-[250px]  '>
                 <ul className="flex flex-col gap-5">
                   <li>
-                    <NavigationMenu.Link className="text-xl" href="/">
-                      Photo Gallary
+                    <NavigationMenu.Link asChild>
+                      <Link href="/"> Photo Gallary</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link className="text-xl " href="/">
-                      Video Gallary
+                    <NavigationMenu.Link asChild>
+                      <Link href="/">Video Gallary</Link>
                     </NavigationMenu.Link>
                   </li>
                 </ul>
               </NavigationMenu.Content>
             </NavigationMenu.Item>
             <NavigationMenu.Item>
-              <NavigationMenu.Link href="/admission" className={isActiveLink('/admission') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>
-                Admission
+              <NavigationMenu.Link asChild >
+                <Link href="/contact" className={isActiveLink('/contact') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>Contact</Link>
+
+              </NavigationMenu.Link>
+            </NavigationMenu.Item>
+            <NavigationMenu.Item>
+              <NavigationMenu.Link asChild >
+                <Link href="/admission" className={isActiveLink('/admission') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>
+                  Admission
+                </Link>
               </NavigationMenu.Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>

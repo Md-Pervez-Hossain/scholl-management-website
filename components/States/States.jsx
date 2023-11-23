@@ -1,73 +1,52 @@
 import Image from 'next/image';
 import stateBg from "../../assets/state-bg.png";
-
+import "./States.css"
+import teacherImage from "../../assets/teacher.svg"
 const States = () => {
   return (
-    <div className='mb-16 relative'>
-      <Image src={stateBg} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
-      <div className='absolute inset-0 flex flex-wrap items-center justify-center'>
-        <div className='w-9/12 mx-auto flex  justify-evenly text-white'>
-          <div className=' flex flex-col gap-2  items-center justify-between'>
-            <div className='border-2 border-white p-5 rounded-full'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path opacity="0.4" d="M24.1797 24C29.7025 24 34.1797 19.5228 34.1797 14C34.1797 8.47715 29.7025 4 24.1797 4C18.6568 4 14.1797 8.47715 14.1797 14C14.1797 19.5228 18.6568 24 24.1797 24Z" fill="white" />
-                <path d="M24.18 29C14.16 29 6 35.72 6 44C6 44.56 6.44 45 7 45H41.36C41.92 45 42.36 44.56 42.36 44C42.36 35.72 34.2 29 24.18 29Z" fill="white" />
-              </svg>
+    <>
+      <div className=' statesBanner h-[500px] flex items-center justify-center '>
+        <div className='w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-10'>
+          <div className=' flex flex-col items-center justify-center text-center  text-white'>
+            <div className='border-2 border-[#999] p-5 rounded-full'>
+              <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
-            <h2 className='text-[32px] font-[400]'>50+</h2>
-            <p className='text-[18px]'>Teachers</p>
+            <div>
+              <h2 className='text-[32px] font-[400] '>50+</h2>
+              <p className='text-[18px] '>Teachers</p>
+            </div>
           </div>
-          <div className=' flex flex-col gap-2  items-center justify-between'>
-            <div className='border-2 border-white p-5 rounded-full'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <g clip-path="url(#clip0_134_30969)">
-                  <path opacity="0.4" d="M37.2422 14C37.0727 13.9757 36.9031 13.9757 36.7336 14C32.9792 13.8787 30 10.7972 30 7.01213C30 3.15424 33.1246 0 37 0C40.8512 0 44 3.12998 44 7.01213C43.9758 10.7972 40.9965 13.8787 37.2422 14Z" fill="white" />
-                  <path opacity="0.4" d="M45.1505 30.7521C42.4372 32.6303 38.6338 33.3316 35.1211 32.8557C36.0417 30.8021 36.5262 28.5232 36.5504 26.119C36.5504 23.6146 36.0175 21.2354 35 19.1568C38.5854 18.6559 42.3888 19.3571 45.1262 21.2354C48.9539 23.8399 48.9539 28.1224 45.1505 30.7521Z" fill="white" />
-                  <path opacity="0.4" d="M10.7578 14C10.9273 13.9757 11.0969 13.9757 11.2664 14C15.0208 13.8787 18 10.7972 18 7.01213C18 3.15424 14.8754 0 11 0C7.14879 0 4 3.12998 4 7.01213C4.02422 10.7972 7.00345 13.8787 10.7578 14Z" fill="white" />
-                  <path opacity="0.4" d="M10.5419 26.1064C10.5419 28.5312 11.028 30.831 11.9074 32.9058C8.64416 33.2808 5.24204 32.5308 2.74253 30.756C-0.914176 28.1312 -0.914176 23.8565 2.74253 21.2317C5.2189 19.4319 8.7136 18.707 12 19.1069C11.0511 21.2068 10.5419 23.5816 10.5419 26.1064Z" fill="white" />
-                  <path d="M24.3023 33C24.1163 32.9767 23.907 32.9767 23.6977 33C19.4186 32.8603 16 29.3435 16 25.0117C16 20.5866 19.5581 17 24 17C28.4186 17 32 20.5866 32 25.0117C32 29.3435 28.6046 32.8603 24.3023 33Z" fill="white" />
-                  <path d="M16.6569 38.0783C13.1144 40.512 13.1144 44.512 16.6569 46.9217C20.6921 49.6928 27.3079 49.6928 31.3431 46.9217C34.8856 44.488 34.8856 40.488 31.3431 38.0783C27.3314 35.3072 20.7155 35.3072 16.6569 38.0783Z" fill="white" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_134_30969">
-                    <rect width="48" height="48" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+          <div className=' flex flex-col items-center justify-center text-center  text-white'>
+            <div className='border-2 border-[#999] p-5 rounded-full'>
+              <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
-            <h2 className='text-[32px] font-[400]'>1500+</h2>
-            <p className='text-[18px]'>students</p>
+            <div>
+              <h2 className='text-[32px] font-[400] '>50+</h2>
+              <p className='text-[18px] '>Teachers</p>
+            </div>
           </div>
-          <div className=' flex flex-col gap-2  items-center justify-between'>
-            <div className='border-2 border-white p-5 rounded-full'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path d="M41.9397 28.66C40.4997 27.02 38.3598 26 35.9998 26C33.7598 26 31.7198 26.92 30.2598 28.42C28.8598 29.86 27.9998 31.84 27.9998 34C27.9998 35.5 28.4198 36.92 29.1598 38.12C29.5598 38.8 30.0798 39.4199 30.6798 39.9399C32.0798 41.2199 33.9398 42 35.9998 42C38.9198 42 41.4597 40.44 42.8397 38.12C43.2597 37.44 43.5798 36.66 43.7598 35.86C43.9198 35.26 43.9998 34.64 43.9998 34C43.9998 31.96 43.2197 30.08 41.9397 28.66ZM38.9998 35.46H33.0198C32.1998 35.46 31.5198 34.78 31.5198 33.96C31.5198 33.14 32.1998 32.46 33.0198 32.46H38.9998C39.8198 32.46 40.4998 33.14 40.4998 33.96C40.4998 34.78 39.8198 35.46 38.9998 35.46Z" fill="white" />
-                <path opacity="0.4" d="M42.1802 43C42.1802 43.56 41.7402 44 41.1802 44H6.82007C6.26007 44 5.82007 43.56 5.82007 43C5.82007 34.72 13.9801 28 24.0001 28C26.0601 28 28.0601 28.2799 29.9001 28.8199C28.7201 30.2199 28.0001 32.04 28.0001 34C28.0001 35.5 28.4202 36.92 29.1602 38.12C29.5602 38.8 30.0802 39.4199 30.6802 39.9399C32.0802 41.2199 33.9401 42 36.0001 42C38.2401 42 40.2601 41.08 41.7001 39.6C42.0201 40.68 42.1802 41.82 42.1802 43Z" fill="white" />
-                <path d="M23.9998 24C29.5226 24 33.9998 19.5228 33.9998 14C33.9998 8.47715 29.5226 4 23.9998 4C18.4769 4 13.9998 8.47715 13.9998 14C13.9998 19.5228 18.4769 24 23.9998 24Z" fill="white" />
-              </svg>
+          <div className=' flex flex-col items-center justify-center text-center  text-white'>
+            <div className='border-2 border-[#999] p-5 rounded-full'>
+              <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
-            <h2 className='text-[32px] font-[400]'>94%</h2>
-            <p className='text-[18px]'>Success</p>
+            <div>
+              <h2 className='text-[32px] font-[400] '>50+</h2>
+              <p className='text-[18px] '>Teachers</p>
+            </div>
           </div>
-          <div className=' flex flex-col gap-2  items-center justify-between'>
-            <div className='border-2 border-white p-5 rounded-full'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path d="M44 42.5H4C3.18 42.5 2.5 43.18 2.5 44C2.5 44.82 3.18 45.5 4 45.5H44C44.82 45.5 45.5 44.82 45.5 44C45.5 43.18 44.82 42.5 44 42.5Z" fill="white" />
-                <path opacity="0.4" d="M34 4H14C8 4 6 7.58 6 12V44H42V12C42 7.58 40 4 34 4Z" fill="white" />
-                <path d="M20 34.5H14C13.18 34.5 12.5 33.82 12.5 33C12.5 32.18 13.18 31.5 14 31.5H20C20.82 31.5 21.5 32.18 21.5 33C21.5 33.82 20.82 34.5 20 34.5Z" fill="white" />
-                <path d="M34 34.5H28C27.18 34.5 26.5 33.82 26.5 33C26.5 32.18 27.18 31.5 28 31.5H34C34.82 31.5 35.5 32.18 35.5 33C35.5 33.82 34.82 34.5 34 34.5Z" fill="white" />
-                <path d="M20 25.5H14C13.18 25.5 12.5 24.82 12.5 24C12.5 23.18 13.18 22.5 14 22.5H20C20.82 22.5 21.5 23.18 21.5 24C21.5 24.82 20.82 25.5 20 25.5Z" fill="white" />
-                <path d="M34 25.5H28C27.18 25.5 26.5 24.82 26.5 24C26.5 23.18 27.18 22.5 28 22.5H34C34.82 22.5 35.5 23.18 35.5 24C35.5 24.82 34.82 25.5 34 25.5Z" fill="white" />
-                <path d="M20 16.5H14C13.18 16.5 12.5 15.82 12.5 15C12.5 14.18 13.18 13.5 14 13.5H20C20.82 13.5 21.5 14.18 21.5 15C21.5 15.82 20.82 16.5 20 16.5Z" fill="white" />
-                <path d="M34 16.5H28C27.18 16.5 26.5 15.82 26.5 15C26.5 14.18 27.18 13.5 28 13.5H34C34.82 13.5 35.5 14.18 35.5 15C35.5 15.82 34.82 16.5 34 16.5Z" fill="white" />
-              </svg>
+          <div className=' flex flex-col items-center justify-center text-center  text-white'>
+            <div className='border-2 border-[#999] p-5 rounded-full'>
+              <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
-            <h2 className='text-[32px] font-[400]'>2019</h2>
-            <p className='text-[18px]'>The Year Founded</p>
+            <div>
+              <h2 className='text-[32px] font-[400] '>50+</h2>
+              <p className='text-[18px] '>Teachers</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+    </>
   );
 };
 

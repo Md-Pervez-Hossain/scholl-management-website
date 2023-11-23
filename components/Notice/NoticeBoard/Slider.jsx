@@ -50,8 +50,6 @@ const Slider = () => {
                     <p className="text-[#999]" >{slide.description}</p>
                   </div>
                 </SwiperSlide>
-
-
               </>
             )
           })

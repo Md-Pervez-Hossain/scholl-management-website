@@ -19,11 +19,11 @@ const ApplicationForm = () => {
     console.log(values);
   };
   return (
-    <div className='w-9/12 mx-auto my-16'>
+    <div className='md:w-9/12 px-5 md:px-0 mx-auto my-16'>
       <h2 className='text-[36px] font-[600] text-center my-5'>School Application Form</h2>
       <div className='border border-[#999] p-10 rounded-md' >
         <form onSubmit={handleSubmit(handleContact)}>
-          <div className='grid grid-cols-2 gap-5'>
+          <div className='grid md:grid-cols-2 gap-5'>
             <div className='flex flex-col'>
               <label className='text-[18px] font-[500] mb-3'>Student Name</label>
               <input  {...register("student_name", { required: true })} placeholder='Enter Student Name' className='border border-[#999] px-4 py-3 rounded' />
@@ -134,7 +134,7 @@ const ApplicationForm = () => {
           </div>
 
           <h2 className='text-[24px] font-[600] my-5'>Perent’s/Guardian’s Information</h2>
-          <div className='grid grid-cols-3 gap-5'>
+          <div className='grid lg:grid-cols-3 gap-5'>
             <div className='flex flex-col'>
               <label className='text-[18px] font-[500] mb-3'>Father Name</label>
               <input type='text'  {...register("father_name", { required: true })} placeholder='Enter Father Name' className='border border-[#999] px-4 py-3 rounded' />
@@ -178,23 +178,25 @@ const ApplicationForm = () => {
               }
             </div>
           </div>
-          <div className='flex items-center gap-10 my-5  '>
+          <div className='flex items-center flex-wrap gap-10 my-5  '>
             <h2 className='font-[600]'>If Guardian Is: </h2>
-            <label onClick={() => setView("father")} htmlFor="father" className='flex items-center gap-2 cursor-pointer'>
-              <input {...register("gurdian")} id='father' type="radio" className='w-5 h-4' />
-              <span> Father</span>
-            </label>
-            <label onClick={() => setView("mother")} htmlFor="mother" className='flex items-center gap-2 cursor-pointer'>
-              <input {...register("gurdian")} id='mother' type="radio" className='w-5 h-4' />
-              <span> Mother</span>
-            </label>
-            <label onClick={() => setView("other")} htmlFor="other" className='flex items-center gap-2 cursor-pointer'>
-              <input {...register("gurdian")} id='other' type="radio" className='w-5 h-4' />
-              <span> Other</span>
-            </label>
+            <div className='flex items-center gap-5'>
+              <label onClick={() => setView("father")} htmlFor="father" className='flex items-center gap-2 cursor-pointer'>
+                <input {...register("gurdian")} id='father' type="radio" className='w-5 h-4' />
+                <span> Father</span>
+              </label>
+              <label onClick={() => setView("mother")} htmlFor="mother" className='flex items-center gap-2 cursor-pointer'>
+                <input {...register("gurdian")} id='mother' type="radio" className='w-5 h-4' />
+                <span> Mother</span>
+              </label>
+              <label onClick={() => setView("other")} htmlFor="other" className='flex items-center gap-2 cursor-pointer'>
+                <input {...register("gurdian")} id='other' type="radio" className='w-5 h-4' />
+                <span> Other</span>
+              </label>
+            </div>
           </div>
           {
-            view === "other" ? <>  <div className='grid grid-cols-4 gap-5'>
+            view === "other" ? <>  <div className='grid lg:grid-cols-4 xl:grid-cols-4 gap-5'>
               <div className='flex flex-col'>
                 <label className='text-[18px] font-[500] mb-3'>Guardian Name</label>
                 <input type='text'  {...register("guardian_name", { required: true })} placeholder='Enter Guardian Name' className='border border-[#999] px-4 py-3 rounded' />
@@ -233,7 +235,7 @@ const ApplicationForm = () => {
               <span>Add New</span>
             </button>
           </div>
-          <div className='grid grid-cols-5 gap-5'>
+          <div className='grid lg:grid-cols-3 xl:grid-cols-5 gap-5'>
             <div className='flex flex-col'>
               <label className='text-[18px] font-[500] mb-3'>Exam Name</label>
               <input type='text'  {...register("exam_name", { required: true })} placeholder='Enter Exam Name' className='border border-[#999] px-4 py-3 rounded' />
@@ -267,14 +269,14 @@ const ApplicationForm = () => {
                 errors.board_name && <p className='text-[#40282C]'>This Field is Required</p>
               }
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col lg:col-span-2 xl:col-auto'>
               <label className='text-[18px] font-[500] mb-3'>Passing Year</label>
               <input type='number'  {...register("passing_year", { required: true })} placeholder='Enter Passing Year' className='border border-[#999] px-4 py-3 rounded' />
               {
                 errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
               }
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col lg:col-span-1 xl:col-auto'>
               <label className='text-[18px] font-[500] mb-3'>Grade</label>
               <input type='number'  {...register("grade", { required: true })} placeholder='Enter Grade' className='border border-[#999] px-4 py-3 rounded' />
               {

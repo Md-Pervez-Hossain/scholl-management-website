@@ -4,7 +4,7 @@ import ChairmanPic from "../../../assets/chairman.png"
 
 const ChairmanMessage = () => {
   return (
-    <div className='w-9/12 mx-auto my-16 grid md:grid-cols-2 gap-10 '>
+    <div className='md:w-9/12 px-5 md:px-0 mx-auto my-16 grid lg:grid-cols-2 gap-10 '>
       <div className='text-center'>
         <Image sizes="(max-width: 768px) 100vw, 33vw" alt='' src={ChairmanPic} />
         <div className='mt-5'>

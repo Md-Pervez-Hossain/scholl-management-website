@@ -3,9 +3,9 @@ import React from 'react';
 import ChairmanPic from '../../assets/chairman.png'
 const Chairman = () => {
   return (
-    <div className='md:w-9/12 px-5 md:px-0 mx-auto grid md:grid-cols-2 gap-10 my-16 items-center'>
+    <div className='md:w-9/12 px-5 lg:px-0 mx-auto grid lg:grid-cols-2 gap-10 my-16 items-center'>
       <div>
-        <Image sizes="(max-width: 768px) 100vw, 33vw" alt='' src={ChairmanPic} />
+        <Image style={{ objectFit: "contain" }} alt='' src={ChairmanPic} />
       </div>
       <div>
         <h2 className='text-[32px] font-[600] mb-5 '>Chairmen Welcome</h2>
