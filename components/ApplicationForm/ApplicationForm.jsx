@@ -1,7 +1,7 @@
 "use client"
 import { BoardsName, blood_groups, classes, gender, religionArray } from '@/data';
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useFieldArray, useForm } from 'react-hook-form';
 import { GoPlus } from "react-icons/go";
 import ImageUploader from '../ImageUploader/ImageUploader';
 import SignUploader from '../ImageUploader/SignUploader';
@@ -10,10 +10,24 @@ const ApplicationForm = () => {
   const [view, setView] = useState("")
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors, isLoading },
   } = useForm({
+    education: [
+      {
+        exam_name: "",
+        institute_name: "",
+        board_name: "",
+        passing_year: "",
+        grade: "",
+      },
+    ],
 
+  });
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: "education",
   });
   const handleContact = (values) => {
     console.log(values);
@@ -230,59 +244,87 @@ const ApplicationForm = () => {
 
           <div className='flex justify-between items-center gap-5 flex-wrap my-8'>
             <h2 className=' text-[24px] font-[600] '>Education Qualification</h2>
-            <button className='border border-[#40282C] px-4 py-2 rounded-md flex items-center gap-2'>
+            <button
+              onClick={() =>
+                append({
+                  exam_name: "",
+                  institute_name: "",
+                  board_name: "",
+                  passing_year: "",
+                  grade: "",
+                })
+              }
+              type='button'
+              className='border border-[#40282C] px-4 py-2 rounded-md flex items-center gap-2'>
               <GoPlus />
               <span>Add New</span>
             </button>
           </div>
-          <div className='grid lg:grid-cols-3 xl:grid-cols-5 gap-5'>
-            <div className='flex flex-col'>
-              <label className='text-[18px] font-[500] mb-3'>Exam Name</label>
-              <input type='text'  {...register("exam_name", { required: true })} placeholder='Enter Exam Name' className='border border-[#999] px-4 py-3 rounded' />
-              {
-                errors.exam_name && <p className='text-[#40282C]'>This Field is Required</p>
-              }
-            </div>
-            <div className='flex flex-col'>
-              <label className='text-[18px] font-[500] mb-3'>Institute Name</label>
-              <input type='text'  {...register("institute_name", { required: true })} placeholder='Enter Institute Name' className='border border-[#999] px-4 py-3 rounded' />
-              {
-                errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
-              }
-            </div>
+          <div >
+            {
+              fields.map((field, index) => {
+                return (
+                  <>
+                    <div className='grid lg:grid-cols-3 xl:grid-cols-5 gap-5'>
+                      <div className='flex flex-col' key={field.id}>
+                        <label className='text-[18px] font-[500] mb-3'>Exam Name</label>
+                        <input type='text'  {...register(`education.${index}.exam_name`, { required: true })} placeholder='Enter Exam Name' className='border border-[#999] px-4 py-3 rounded' />
+                        {
+                          errors.exam_name && <p className='text-[#40282C]'>This Field is Required</p>
+                        }
+                      </div>
+                      <div className='flex flex-col'>
+                        <label className='text-[18px] font-[500] mb-3'>Institute Name</label>
+                        <input type='text'  {...register(`education.${index}.institute_name`, { required: true })} placeholder='Enter Institute Name' className='border border-[#999] px-4 py-3 rounded' />
+                        {
+                          errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
+                        }
+                      </div>
 
-            <div className='flex flex-col'>
-              <label className='text-[18px] font-[500] mb-3'>Board Selection</label>
-              <select {...register("board_name", { required: true })} className='border border-[#999] px-4 py-3 rounded'>
-                <option value="" selected>Select Your Board</option>
-                {
-                  BoardsName?.map(boardName => {
-                    return (
-                      <>
-                        <option value={boardName}>{boardName}</option>
-                      </>
-                    )
-                  })
-                }
-              </select>
-              {
-                errors.board_name && <p className='text-[#40282C]'>This Field is Required</p>
-              }
-            </div>
-            <div className='flex flex-col lg:col-span-2 xl:col-auto'>
-              <label className='text-[18px] font-[500] mb-3'>Passing Year</label>
-              <input type='number'  {...register("passing_year", { required: true })} placeholder='Enter Passing Year' className='border border-[#999] px-4 py-3 rounded' />
-              {
-                errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
-              }
-            </div>
-            <div className='flex flex-col lg:col-span-1 xl:col-auto'>
-              <label className='text-[18px] font-[500] mb-3'>Grade</label>
-              <input type='number'  {...register("grade", { required: true })} placeholder='Enter Grade' className='border border-[#999] px-4 py-3 rounded' />
-              {
-                errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
-              }
-            </div>
+                      <div className='flex flex-col'>
+                        <label className='text-[18px] font-[500] mb-3'>Board Selection</label>
+                        <select {...register(`education.${index}.board_name`, { required: true })} className='border border-[#999] px-4 py-3 rounded'>
+                          <option value="" selected>Select Your Board</option>
+                          {
+                            BoardsName?.map(boardName => {
+                              return (
+                                <>
+                                  <option value={boardName}>{boardName}</option>
+                                </>
+                              )
+                            })
+                          }
+                        </select>
+                        {
+                          errors.board_name && <p className='text-[#40282C]'>This Field is Required</p>
+                        }
+                      </div>
+                      <div className='flex flex-col lg:col-span-2 xl:col-auto'>
+                        <label className='text-[18px] font-[500] mb-3'>Passing Year</label>
+                        <input type='number'  {...register(`education.${index}.passing_year`, { required: true })} placeholder='Enter Passing Year' className='border border-[#999] px-4 py-3 rounded' />
+                        {
+                          errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
+                        }
+                      </div>
+                      <div className='flex flex-col lg:col-span-1 xl:col-auto'>
+                        <label className='text-[18px] font-[500] mb-3'>Grade</label>
+                        <input type='number'  {...register(`education.${index}.grade`, { required: true })} placeholder='Enter Grade' className='border border-[#999] px-4 py-3 rounded' />
+                        {
+                          errors.institute_name && <p className='text-[#40282C]'>This Field is Required</p>
+                        }
+                      </div>
+                      {index > 0 && (
+                        <button type="button" onClick={() => remove(index)}>
+                          Remove
+                        </button>
+                      )}
+                    </div>
+
+                  </>
+                )
+              })
+            }
+
 
           </div>
           <div className='flex flex-col my-5'>
