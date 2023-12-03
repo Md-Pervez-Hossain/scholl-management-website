@@ -4,6 +4,7 @@ import Header from '@/components/Header/Header'
 import HeroBanner from '@/components/HeroBanner/HeroBanner'
 import Footer from '@/components/Footer/Footer'
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import NavigationMenu from '@/components/Header/NavigationMenu'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={inter.className}>
+        <NavigationMenu />
         <Header />
         <HeroBanner />
         {children}
