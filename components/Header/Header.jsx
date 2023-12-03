@@ -40,27 +40,27 @@ const Header = () => {
                 <ul className="flex flex-col gap-5">
                   <li>
                     <NavigationMenu.Link asChild >
-                      <Link href="/academic#SchoolMorningShift" className="text-xl" >Morning Shift</Link>
+                      <Link href="/academic#SchoolMorningShift"  >Morning Shift</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
                     <NavigationMenu.Link asChild >
-                      <Link href="/academic#SchoolEveningShift" className="text-xl "> Evening  Shift</Link>
+                      <Link href="/academic#SchoolEveningShift" > Evening  Shift</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
                     <NavigationMenu.Link asChild>
-                      <Link href="/" className="text-xl " > Calender</Link>
+                      <Link href="/"> Calender</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
                     <NavigationMenu.Link asChild  >
-                      <Link href="/academic#UpComingEvents" className="text-xl ">UpComing Events</Link>
+                      <Link href="/academic#UpComingEvents" >UpComing Events</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
                     <NavigationMenu.Link asChild>
-                      <Link href="/academic#NoticeBoard" className="text-xl ">Notice Board</Link>
+                      <Link href="/academic#NoticeBoard" >Notice Board</Link>
                     </NavigationMenu.Link>
                   </li>
                 </ul>
@@ -75,12 +75,12 @@ const Header = () => {
                 <ul className="flex flex-col gap-5">
                   <li>
                     <NavigationMenu.Link asChild>
-                      <Link href="/"> Photo Gallary</Link>
+                      <Link href="/campus-life#PhotoGallary"> Photo Gallary</Link>
                     </NavigationMenu.Link>
                   </li>
                   <li>
                     <NavigationMenu.Link asChild>
-                      <Link href="/">Video Gallary</Link>
+                      <Link href="/campus-life#VideoGallary">Video Gallary</Link>
                     </NavigationMenu.Link>
                   </li>
                 </ul>

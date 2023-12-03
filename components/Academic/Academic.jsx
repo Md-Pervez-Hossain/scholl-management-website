@@ -2,6 +2,7 @@ import React from 'react';
 import SchoolMorningShift from './SchoolSifts/SchoolMorningShift';
 import SchollEveningShift from './SchoolSifts/SchollEveningShift';
 import UpComingEvents from './UpComingEvents/UpComingEvents';
+import Calender from './Calender/Calender';
 
 
 const Academic = () => {
@@ -9,6 +10,7 @@ const Academic = () => {
     <div className='md:w-9/12 px-5 md:px-0 mx-auto  my-16 '>
       <SchoolMorningShift />
       <SchollEveningShift />
+      <Calender />
       <UpComingEvents />
     </div>
   );

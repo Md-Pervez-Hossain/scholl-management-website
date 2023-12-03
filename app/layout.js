@@ -3,7 +3,7 @@ import './globals.css'
 import Header from '@/components/Header/Header'
 import HeroBanner from '@/components/HeroBanner/HeroBanner'
 import Footer from '@/components/Footer/Footer'
-
+import "react-big-calendar/lib/css/react-big-calendar.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

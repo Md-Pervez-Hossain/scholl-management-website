@@ -16,7 +16,7 @@ const VideoGallary = () => {
   ]
 
   return (
-    <div className='w-9/12 mx-auto my-16'>
+    <div id="VideoGallary" className='w-9/12 mx-auto my-16'>
       <h2 className='text-[32px] font-[600] mb-5 text-center'>Video Gallery</h2>
       <div className='grid grid-cols-3 gap-10'>
         {

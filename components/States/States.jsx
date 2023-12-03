@@ -8,7 +8,7 @@ const States = () => {
       <div className=' statesBanner h-[500px] flex items-center justify-center '>
         <div className='w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-10'>
           <div className=' flex flex-col items-center justify-center text-center  text-white'>
-            <div className='border-2 border-[#999] p-5 rounded-full'>
+            <div className='border-2 border-[#999] p-5 rounded-full mb-3'>
               <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
             <div>
@@ -17,30 +17,30 @@ const States = () => {
             </div>
           </div>
           <div className=' flex flex-col items-center justify-center text-center  text-white'>
-            <div className='border-2 border-[#999] p-5 rounded-full'>
+            <div className='border-2 border-[#999] p-5 rounded-full mb-3'>
               <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
             <div>
-              <h2 className='text-[32px] font-[400] '>50+</h2>
-              <p className='text-[18px] '>Teachers</p>
+              <h2 className='text-[32px] font-[400] '>1500+</h2>
+              <p className='text-[18px] '>Students</p>
             </div>
           </div>
           <div className=' flex flex-col items-center justify-center text-center  text-white'>
-            <div className='border-2 border-[#999] p-5 rounded-full'>
+            <div className='border-2 border-[#999] p-5 rounded-full mb-3'>
               <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
             <div>
-              <h2 className='text-[32px] font-[400] '>50+</h2>
-              <p className='text-[18px] '>Teachers</p>
+              <h2 className='text-[32px] font-[400] '>94%</h2>
+              <p className='text-[18px] '>Success</p>
             </div>
           </div>
           <div className=' flex flex-col items-center justify-center text-center  text-white'>
-            <div className='border-2 border-[#999] p-5 rounded-full'>
+            <div className='border-2 border-[#999] p-5 rounded-full mb-3'>
               <Image src={teacherImage} alt='' width={70} height={70} />
             </div>
             <div>
-              <h2 className='text-[32px] font-[400] '>50+</h2>
-              <p className='text-[18px] '>Teachers</p>
+              <h2 className='text-[32px] font-[400] '>2019</h2>
+              <p className='text-[18px] '>The Year Founded</p>
             </div>
           </div>
         </div>
