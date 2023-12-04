@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const PhotoGallery = () => {
   return (
-    <div id="PhotoGallary" className='w-9/12 mx-auto  my-16'>
+    <div id="PhotoGallary" className=' lg:w-11/12 px-5 lg:px-0 xl:w-9/12 mx-auto  my-16'>
       <h2 className='text-[32px] font-[600] mb-5 text-center'>Photo Gallery</h2>
       <div className='grid md:grid-cols-4 gap-5'>
         <div>

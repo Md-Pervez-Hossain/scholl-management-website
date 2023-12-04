@@ -124,7 +124,7 @@ const Calender = () => {
 
 
   return (
-    <div className="my-16" style={{ height: 600 }}>
+    <div className="my-16 lg:w-11/12 px-5 lg:px-0 xl:w-9/12 mx-auto" style={{ height: 600 }}>
       <h2 className='text-center text-[32px] font-[600] mb-5'>
         Calender</h2>
       <Calendar

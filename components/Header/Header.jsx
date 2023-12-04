@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="text-white">
       <NavigationMenu.Root>
-        <NavigationMenu.List className=' flex flex-col md:flex-row items-center flex-wrap lg:gap-8  justify-end'>
+        <NavigationMenu.List className=' flex flex-col md:flex-row  flex-wrap lg:gap-8 gap-10  justify-end'>
           <NavigationMenu.Item>
             <NavigationMenu.Link asChild>
               <Link href="/" className={isActiveLink('/') ? 'bg-white text-[#40282C] px-4 py-2 rounded-md' : ''}>Home</Link>
@@ -26,12 +26,11 @@ const Header = () => {
           </NavigationMenu.Item>
           <NavigationMenu.Item className='relative z-50'>
             <NavigationMenu.Trigger >
-
               <Link href="/academic" className='flex items-center gap-2 group '>
                 <span> Academic</span> <RxChevronDown className=" text-2xl font-bold transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
               </Link>
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className=' text-[#40282C] bg-white shadow-2xl   p-5  text-start  w-[250px] data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-14 left-0  '>
+            <NavigationMenu.Content className=' text-[#40282C] bg-white shadow-2xl   p-5  text-start  w-[250px]  absolute top-14 left-0  '>
               <ul className="flex flex-col gap-5">
                 <li>
                   <NavigationMenu.Link asChild >

@@ -8,7 +8,7 @@ import OtherPages from "./OtherPages";
 const Footer = () => {
   return (
     <div className=" bg-[#40282C]">
-      <div className="md:w-9/12 px-5 md:px-0 mx-auto text-white py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="lg:w-11/12 xl:w-9/12 px-5 md:px-0 mx-auto text-white py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <About />
         </div>
