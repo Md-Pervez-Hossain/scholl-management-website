@@ -98,7 +98,7 @@ const TeachersPhoto = () => {
             return (
               <>
                 <div className='text-center' >
-                  <Image alt='' src={photo.img} />
+                  <Image alt='' style={{ objectFit: "contain" }} width={1000} src={photo.img} />
                   <h3 className='text-[18px] font-[500] mt-2'>{photo?.name}</h3>
                   <h3 >{photo?.title}</h3>
                 </div>
