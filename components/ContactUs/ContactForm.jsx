@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import PrimaryButton from '../Share/Button/PrimaryButton';
 
 const ContactForm = () => {
   const {
@@ -54,9 +55,9 @@ const ContactForm = () => {
           }
         </div>
         <div className='flex items-center justify-center'>
-          <button className='bg-[#40282C] px-4 py-3 rounded-md text-white '>Submit Message</button>
-        </div>
 
+          <PrimaryButton>Submit Message</PrimaryButton>
+        </div>
       </form>
     </div>
   );

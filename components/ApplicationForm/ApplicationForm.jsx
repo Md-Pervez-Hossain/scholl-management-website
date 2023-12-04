@@ -5,6 +5,7 @@ import { useFieldArray, useForm } from 'react-hook-form';
 import { GoPlus } from "react-icons/go";
 import ImageUploader from '../ImageUploader/ImageUploader';
 import SignUploader from '../ImageUploader/SignUploader';
+import PrimaryButton from '../Share/Button/PrimaryButton';
 
 const ApplicationForm = () => {
   const [view, setView] = useState("")
@@ -352,7 +353,7 @@ const ApplicationForm = () => {
             }
           </div>
           <div className='flex items-center justify-center mt-8'>
-            <button className='bg-[#40282C] px-4 py-3 rounded-md text-white '>Submit </button>
+            <PrimaryButton>Submit</PrimaryButton>
           </div>
         </form>
       </div>

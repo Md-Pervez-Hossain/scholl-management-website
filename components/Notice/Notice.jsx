@@ -3,6 +3,7 @@ import NoticeBoard from './NoticeBoard/NoticeBoard';
 const Notice = () => {
   return (
     <div >
+
       <NoticeBoard />
     </div>
   );

@@ -6,7 +6,7 @@ const ChairmanMessage = () => {
   return (
     <div className='md:w-9/12 px-5 md:px-0 mx-auto my-16 grid lg:grid-cols-2 gap-10 '>
       <div className='text-center'>
-        <Image sizes="(max-width: 768px) 100vw, 33vw" alt='' src={ChairmanPic} className=' rounded-md' />
+        <Image sizes="(max-width: 768px) 100vw, 33vw" alt='' src={ChairmanPic} className=' rounded-md transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         <div className='mt-5'>
           <h2 className='text-[24px] font-[500]'>Md. Mosharraf Hossain</h2>
           <p>Chairman & Founder </p>

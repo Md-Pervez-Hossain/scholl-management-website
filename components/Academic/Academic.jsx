@@ -8,8 +8,10 @@ import Calender from './Calender/Calender';
 const Academic = () => {
   return (
     <div className=' '>
-      <SchoolMorningShift />
-      <SchollEveningShift />
+      <div className='my-16'>
+        <SchoolMorningShift />
+        <SchollEveningShift />
+      </div>
       <Calender />
       <UpComingEvents />
     </div>

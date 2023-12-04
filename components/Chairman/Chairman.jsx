@@ -5,7 +5,7 @@ const Chairman = () => {
   return (
     <div className=' lg:w-11/12 xl:w-9/12 px-5 lg:px-0 mx-auto grid lg:grid-cols-2 gap-10 my-16 items-center'>
       <div>
-        <Image style={{ objectFit: "contain" }} width={1000} alt='' src={ChairmanPic} className=' rounded-md' />
+        <Image style={{ objectFit: "contain" }} width={1000} alt='' src={ChairmanPic} className=' rounded-md transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
       </div>
       <div>
         <h2 className='text-[32px] font-[600] mb-5 '>Chairmen Welcome</h2>

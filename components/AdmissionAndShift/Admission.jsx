@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react';
+import PrimaryButton from '../Share/Button/PrimaryButton';
 
 const Admission = () => {
   return (
@@ -10,7 +11,10 @@ const Admission = () => {
           Time to register for school is now! complete
           online registration for new and returning students.
           Our office is open to assist you with the admission process.</p>
-        <Link href='/admission'><button className='bg-white px-6 py-2 rounded text-[#40282C]'>Apply Now</button></Link>
+        <Link href='/admission'>
+          <PrimaryButton className='bg-white border-2 border-white px-6 py-2 rounded text-[#40282C] hover:text-white'>Apply Now</PrimaryButton>
+        </Link>
+
       </div>
     </div>
 

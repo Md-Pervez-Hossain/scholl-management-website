@@ -32,7 +32,7 @@ const Slider = () => {
   ];
 
   return (
-    <div>
+    <div className=" z-0">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 
         {

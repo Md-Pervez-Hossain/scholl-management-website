@@ -11,7 +11,7 @@ const Header = () => {
     return href === pathname;
   };
   return (
-    <div className="text-white">
+    <div className="text-white bg-[#40282C] z-[1000px] px-8 lg:px-0 py-16 lg:py-5 ">
       <NavigationMenu.Root>
         <NavigationMenu.List className=' flex flex-col md:flex-row  flex-wrap lg:gap-8 gap-10  justify-end'>
           <NavigationMenu.Item>
@@ -44,7 +44,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavigationMenu.Link asChild>
-                    <Link href="/"> Calender</Link>
+                    <Link href="/academic#Calender"> Calender</Link>
                   </NavigationMenu.Link>
                 </li>
                 <li>

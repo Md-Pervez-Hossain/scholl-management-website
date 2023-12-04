@@ -24,7 +24,7 @@ const ImageUploader = () => {
       <label htmlFor='photoUpload' className='cursor-pointer'>
         {image ? (
           <>
-            <div className='flex flex-col items-center  justify-center border-2 border-dashed border-[#999] rounded-lg w-full h-[200px]'>
+            <div className='flex flex-col items-center  justify-center border border-dashed border-[#999] rounded-lg w-full h-[200px]'>
               <div className='relative   '>
                 <Image src={image} alt='placeholder' width={320} height={320} />
               </div>

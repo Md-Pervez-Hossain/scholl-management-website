@@ -14,22 +14,22 @@ const PhotoGallery = () => {
       <h2 className='text-[32px] font-[600] mb-5 text-center'>Photo Gallery</h2>
       <div className='grid md:grid-cols-4 gap-5'>
         <div>
-          <Image src={img1} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img1} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
         <div>
-          <Image src={img2} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img2} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
         <div className='col-span-2'>
-          <Image src={img3} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img3} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
         <div>
-          <Image src={img4} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img4} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
         <div className='col-span-2'>
-          <Image src={img5} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img5} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
         <div>
-          <Image src={img6} sizes="(max-width: 768px) 100vw, 33vw" alt='' />
+          <Image src={img6} sizes="(max-width: 768px) 100vw, 33vw" alt='' className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer' />
         </div>
       </div>
     </div>
