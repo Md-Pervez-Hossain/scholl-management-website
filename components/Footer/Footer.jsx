@@ -4,25 +4,22 @@ import About from "./About";
 import Contact from "./Contact";
 import SocialAccount from "./SocialAccount";
 import OtherPages from "./OtherPages";
+import Container from "../ui/Container";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#40282C]">
-      <div className="lg:w-11/12 xl:w-9/12 px-5 md:px-0 mx-auto text-white py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-        <div>
+    <div className=" bg-primary">
+      <Container>
+        <div className=" text-white py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <About />
-        </div>
-        <div>
           <Contact />
-        </div>
-        <div>
           <Gallery />
+          <div>
+            <SocialAccount />
+            <OtherPages />
+          </div>
         </div>
-        <div>
-          <SocialAccount />
-          <OtherPages />
-        </div>
-      </div>
+      </Container>
     </div>
   );
 };

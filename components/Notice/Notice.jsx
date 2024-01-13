@@ -1,9 +1,8 @@
-import React from 'react';
-import NoticeBoard from './NoticeBoard/NoticeBoard';
+import React from "react";
+import NoticeBoard from "./NoticeBoard/NoticeBoard";
 const Notice = () => {
   return (
-    <div >
-
+    <div>
       <NoticeBoard />
     </div>
   );

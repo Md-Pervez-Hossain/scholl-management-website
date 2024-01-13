@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        blackText: "#222222",
+        primary: "#40282C",
+        secondary: "#F5F5F5",
+        textColor: "#BFB7B9"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
