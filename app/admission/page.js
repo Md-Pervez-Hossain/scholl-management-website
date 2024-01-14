@@ -1,10 +1,13 @@
 import ApplicationForm from '@/components/ApplicationForm/ApplicationForm';
+import Container from '@/components/ui/Container';
 import React from 'react';
 
 const AdmissionPage = () => {
   return (
     <div>
-      <ApplicationForm />
+      <Container>
+        <ApplicationForm />
+      </Container>
     </div>
   );
 };

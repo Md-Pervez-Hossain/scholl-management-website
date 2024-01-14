@@ -7,6 +7,7 @@ import Rules from "../../assets/rules.png";
 import ClassSixSyllabusPic from "../../assets/teacher.svg";
 import PrimaryButton from "../Share/Button/PrimaryButton";
 import Title from "../ui/Title";
+import Heading from "../ui/Heading";
 
 const Information = () => {
   const handleSyllabusDownload = (syllabus) => {
@@ -32,10 +33,10 @@ const Information = () => {
             className=" rounded-md imageHover"
           />
           <div className="divCenter">
-            <h2 className="text-[18px] mb-3">Admission Info</h2>
+            <Heading>Admission Info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>
@@ -49,11 +50,11 @@ const Information = () => {
             src={AcademicInfo}
             className=" rounded-md imageHover"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <h2 className="text-[18px] mb-3">Academic info</h2>
+          <div className="divCenter">
+            <Heading>Academic info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>
@@ -67,11 +68,11 @@ const Information = () => {
             src={Rules}
             className=" rounded-md imageHover"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <h2 className="text-[18px] mb-3">Rules & Regulation</h2>
+          <div className="divCenter">
+            <Heading>Rules & Regulation</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>
@@ -85,11 +86,11 @@ const Information = () => {
             src={AdmissionInfo}
             className=" rounded-md imageHover"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <h2 className="text-[18px] mb-3">Admission Info</h2>
+          <div className="divCenter">
+            <Heading>Admission Info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>
@@ -103,11 +104,11 @@ const Information = () => {
             src={AcademicInfo}
             className=" rounded-md imageHover"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <h2 className="text-[18px] mb-3">Academic info</h2>
+          <div className="divCenter">
+            <Heading>Academic info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>
@@ -121,11 +122,11 @@ const Information = () => {
             src={Rules}
             className=" rounded-md imageHover"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <h2 className="text-[18px] mb-3">Rules & Regulation</h2>
+          <div className="divCenter">
+            <Heading>Rules & Regulation</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white px-6 py-2 rounded-md bg-transparent"
+              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
             >
               Get PDF
             </PrimaryButton>

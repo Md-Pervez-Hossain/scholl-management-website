@@ -5,16 +5,19 @@ import { usePathname } from "next/navigation";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { RxChevronDown } from "react-icons/rx";
 
-const Header = () => {
+const MobileHeader = ({ setIsOpen }) => {
   const pathname = usePathname();
   const isActiveLink = (href) => {
     return href === pathname;
   };
   return (
-    <div className="text-white  z-[1000px] px-8 lg:px-0 py-10 lg:py-5 ">
+    <div
+      className="text-white  z-[1000px] px-8 lg:px-0 py-10 lg:py-5 "
+      onClick={() => setIsOpen(false)}
+    >
       <NavigationMenu.Root>
         <NavigationMenu.List className=" flex flex-col md:flex-row  flex-wrap lg:gap-10 gap-8  justify-end">
-          <NavigationMenu.Item>
+          <NavigationMenu.Item onClick={() => setIsOpen(false)}>
             <NavigationMenu.Link asChild>
               <Link
                 href="/"
@@ -150,4 +153,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MobileHeader;

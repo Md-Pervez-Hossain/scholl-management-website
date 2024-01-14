@@ -22,57 +22,67 @@ const States = () => {
                 <Image
                   src={teacherImage}
                   alt=""
-                  width={70}
-                  height={70}
-                  className="imageHover"
+                  className="imageHover lg:w-[60px] lg:h-[60px] w-[30px] h-[30px]"
                 />
               </div>
               <div>
-                <h2 className="text-[32px] font-[400] ">
+                <h2 className="lg:text-[32px] text-[24px] font-[400] ">
                   {counterStage && <CountUp duration={2} start={0} end={50} />}{" "}
                   +
                 </h2>
-                <p className="text-[18px] ">Teachers</p>
+                <p className="lg:text-base text-[14px] ">Teachers</p>
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center text-center  text-white">
               <div className="border-2 border-[#999] p-5 rounded-full mb-3">
-                <Image src={teacherImage} alt="" width={70} height={70} />
+                <Image
+                  src={teacherImage}
+                  alt=""
+                  className="imageHover lg:w-[60px] lg:h-[60px] w-[30px] h-[30px]"
+                />
               </div>
               <div>
-                <h2 className="text-[32px] font-[400] ">
+                <h2 className="lg:text-[32px] text-[24px] font-[400]">
                   {counterStage && (
                     <CountUp duration={2} start={0} end={1500} />
                   )}
                   +
                 </h2>
-                <p className="text-[18px] ">Students</p>
+                <p className="lg:text-base text-[14px] ">Students</p>
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center text-center  text-white">
               <div className="border-2 border-[#999] p-5 rounded-full mb-3">
-                <Image src={teacherImage} alt="" width={70} height={70} />
+                <Image
+                  src={teacherImage}
+                  alt=""
+                  className="imageHover lg:w-[60px] lg:h-[60px] w-[30px] h-[30px]"
+                />
               </div>
               <div>
-                <h2 className="text-[32px] font-[400] ">
+                <h2 className="lg:text-[32px] text-[24px] font-[400]">
                   {counterStage && <CountUp duration={2} start={0} end={94} />}{" "}
                   %
                 </h2>
-                <p className="text-[18px] ">Success</p>
+                <p className="lg:text-base text-[14px] ">Success</p>
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center text-center  text-white">
               <div className="border-2 border-[#999] p-5 rounded-full mb-3">
-                <Image src={teacherImage} alt="" width={70} height={70} />
+                <Image
+                  src={teacherImage}
+                  alt=""
+                  className="imageHover lg:w-[60px] lg:h-[60px] w-[30px] h-[30px]"
+                />
               </div>
               <div>
-                <h2 className="text-[32px] font-[400] ">
+                <h2 className="lg:text-[32px] text-[24px] font-[400]">
                   {" "}
                   {counterStage && (
                     <CountUp duration={2} start={0} end={2019} />
                   )}{" "}
                 </h2>
-                <p className="text-[18px] ">The Year Founded</p>
+                <p className="lg:text-base text-[14px] ">The Year Founded</p>
               </div>
             </div>
           </div>

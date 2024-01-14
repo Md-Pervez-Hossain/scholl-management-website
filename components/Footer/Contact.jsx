@@ -7,7 +7,7 @@ const Contact = () => {
       <h2 className="text-[18px] font-[600] mb-3 text-center lg:flex ">
         Contact info
       </h2>
-      <div className="flex items-center gap-5 mb-5 text-center justify-center lg:justify-start lg:flex">
+      <div className="flex flex-col lg:flex-row items-center lg:gap-5 gap-3 lg:mb-5 mb-3 text-center justify-center lg:justify-start lg:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -23,11 +23,15 @@ const Contact = () => {
           />
         </svg>
         <div>
-          <Paragraph>+880 1700000000</Paragraph>
-          <Paragraph>+880 01707-388237</Paragraph>
+          <Paragraph className="text-center lg:text-start">
+            +880 1700000000
+          </Paragraph>
+          <Paragraph className="text-center lg:text-start">
+            +880 01707-388237
+          </Paragraph>
         </div>
       </div>
-      <div className="flex items-center justify-center lg:justify-start gap-5 mb-5">
+      <div className="flex flex-col lg:flex-row items-center lg:gap-5 gap-3  lg:mb-5  mb-3 justify-center lg:justify-start  ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -51,11 +55,15 @@ const Contact = () => {
           />
         </svg>
         <div>
-          <Paragraph>mhsc926@gmail.com</Paragraph>
-          <Paragraph>support@eduadmin.com</Paragraph>
+          <Paragraph className="text-center lg:text-start">
+            mhsc926@gmail.com
+          </Paragraph>
+          <Paragraph className="text-center lg:text-start">
+            support@eduadmin.com
+          </Paragraph>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center gap-5 lg:mb-5 justify-center lg:justify-start">
+      <div className="flex flex-col lg:flex-row items-center  lg:gap-5 gap-3 lg:mb-5  justify-center lg:justify-start">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

@@ -17,13 +17,14 @@ const VideoGallary = () => {
   ];
 
   return (
-    <div id="VideoGallary" className="w-9/12 mx-auto my-16">
+    <div id="VideoGallary" className="lg:my-16 my-5">
       <Title>Video Gallery</Title>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 lg:gap-10 gap-5">
         {videos?.map((video) => {
           return (
-            <div key={video?.id}>
+            <div key={video?.id} className=" overflow-hidden group rounded-md">
               <iframe
+                className="rounded-md imageHover"
                 width="350px"
                 height="250px"
                 src={`${video?.link}`}

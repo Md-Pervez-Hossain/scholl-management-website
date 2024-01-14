@@ -5,8 +5,8 @@ import Image from "next/image";
 import Container from "../ui/Container";
 const NavigationMenu = () => {
   return (
-    <Container className="py-2">
-      <div className="  hidden lg:flex items-center justify-between flex-wrap gap-10">
+    <Container>
+      <div className=" py-2  hidden lg:flex items-center justify-between flex-wrap gap-10">
         <div className="flex items-center flex-wrap gap-5">
           <div className="flex items-center flex-wrap gap-3">
             <Image alt="" src={phoneIcon} width={20} height={20} />

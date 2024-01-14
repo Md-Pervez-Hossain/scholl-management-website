@@ -38,9 +38,9 @@ const Slider = () => {
           return (
             <>
               <SwiperSlide>
-                <div className="text-center px-16 flex flex-col justify-center items-center bg-white rounded shadow-md py-24">
-                  <h2 className="bg-[#40282C] rounded-md w-36 h-36 text-white flex items-center justify-center ">
-                    <span className=" flex items-center justify-center  w-32 h-32 rounded border-2 border-dashed text-[#FBC531]">
+                <div className="text-center lg:px-16 flex flex-col justify-center items-center bg-white rounded shadow-md lg:py-24 py-5">
+                  <h2 className="bg-[#40282C] rounded-md lg:w-36 lg:h-36 w-24 h-16 text-white flex items-center justify-center ">
+                    <span className=" flex items-center justify-center  lg:w-32 lg:h-32 w-24 h-16 rounded border-2 border-dashed text-[#FBC531]">
                       {slide.date}
                     </span>
                   </h2>

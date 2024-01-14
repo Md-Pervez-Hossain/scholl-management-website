@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className=" bg-primary">
       <Container>
-        <div className=" text-white py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className=" text-white lg:py-16 py-8 grid md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5">
           <About />
           <Contact />
           <Gallery />

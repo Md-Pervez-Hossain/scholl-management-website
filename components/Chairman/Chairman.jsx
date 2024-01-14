@@ -5,7 +5,7 @@ import Title from "../ui/Title";
 import Paragraph from "../ui/Paragraph";
 const Chairman = () => {
   return (
-    <div className=" grid lg:grid-cols-2 gap-10 my-16 items-center">
+    <div className=" grid lg:grid-cols-2 gap-10 lg:my-16 my-5 items-center">
       <div className=" overflow-hidden group rounded-md">
         <Image
           style={{ objectFit: "contain" }}

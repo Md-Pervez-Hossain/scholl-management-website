@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 import { Calendar, momentLocalizer } from "react-big-calendar";
@@ -6,6 +6,7 @@ import moment from "moment";
 
 import "./Calender.css";
 import CalenderPopup from "./CalenderPopup";
+import Title from "@/components/ui/Title";
 const localizer = momentLocalizer(moment);
 const Calender = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -122,11 +123,11 @@ const Calender = () => {
     };
   };
 
-
   return (
-    <div id="Calender" className="my-16 lg:w-11/12 px-5 lg:px-0 xl:w-9/12 mx-auto" style={{ height: 600 }}>
-      <h2 className='text-center text-[32px] font-[600] mb-5'>
-        Calender</h2>
+    <div id="Calender" className="lg:my-16 my-5 " style={{ height: 600 }}>
+      <div className="flex items-center justify-center ">
+        <Title>Calender</Title>
+      </div>
       <Calendar
         localizer={localizer}
         events={calenderInfo}
@@ -137,13 +138,9 @@ const Calender = () => {
         components={{
           event: EventDisplay,
         }}
-
       />
       {selectedEvent && (
-        <CalenderPopup
-          event={selectedEvent}
-          onClosePopup={handleClosePopup}
-        />
+        <CalenderPopup event={selectedEvent} onClosePopup={handleClosePopup} />
       )}
     </div>
   );

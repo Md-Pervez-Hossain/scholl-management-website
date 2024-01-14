@@ -8,6 +8,7 @@ import img6 from "../../assets/photo-galery6.png";
 
 import Image from "next/image";
 import Title from "../ui/Title";
+import Container from "../ui/Container";
 
 const PhotoGallery = () => {
   return (

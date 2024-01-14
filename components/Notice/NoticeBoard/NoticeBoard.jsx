@@ -8,13 +8,20 @@ const NoticeBoard = () => {
   return (
     <div
       id="NoticeBoard"
-      className=" py-16 bg-[#FBC531] rounded lg:p-16 p-5  grid grid-cols-3  gap-5 items-center"
+      className=" lg:py-16 bg-[#FBC531] rounded lg:p-16 p-3  grid grid-cols-3  gap-5 items-center"
     >
-      <div className=" col-span-3 lg:col-span-1 p-3">
-        <Title>Our Notice Board</Title>
-        <Image style={{ objectFit: "contain" }} src={noticePic} alt="" />
+      <div className=" col-span-3 lg:col-span-1 p-3 flex items-center justify-center">
+        <div>
+          <Title>Our Notice Board</Title>
+          <Image
+            style={{ objectFit: "contain" }}
+            src={noticePic}
+            alt=""
+            className="w-[150px] lg:w-[250px]"
+          />
+        </div>
       </div>
-      <div className=" col-span-3 lg:col-span-2 px-5">
+      <div className=" col-span-3 lg:col-span-2 lg:px-5">
         <Slider />
       </div>
     </div>
