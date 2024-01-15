@@ -126,7 +126,7 @@ const Calender = () => {
   return (
     <div id="Calender" className="lg:my-16 my-5 " style={{ height: 600 }}>
       <div className="flex items-center justify-center ">
-        <Title>Calender</Title>
+        <Title className="lg:mb-2">Calender</Title>
       </div>
       <Calendar
         localizer={localizer}

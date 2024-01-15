@@ -4,7 +4,7 @@ const Heading = ({ children, className }) => {
   return (
     <div
       className={twMerge(
-        "text-base lg:text-[18px] font-[500] lg:my-2 my-1",
+        "text-base lg:text-[18px] font-[500] lg:my-2 my-1 ",
         className
       )}
     >

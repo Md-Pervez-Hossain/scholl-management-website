@@ -8,9 +8,9 @@ const NoticeBoard = () => {
   return (
     <div
       id="NoticeBoard"
-      className=" lg:py-16 bg-[#FBC531] rounded lg:p-16 p-3  grid grid-cols-3  gap-5 items-center"
+      className=" lg:py-5 bg-[#FBC531] rounded-lg lg:p-5 p-3  grid grid-cols-3  gap-5 items-center"
     >
-      <div className=" col-span-3 lg:col-span-1 p-3 flex items-center justify-center">
+      <div className=" col-span-3 lg:col-span-1 p-3 flex items-center justify-center lg:justify-start">
         <div>
           <Title>Our Notice Board</Title>
           <Image
@@ -21,7 +21,7 @@ const NoticeBoard = () => {
           />
         </div>
       </div>
-      <div className=" col-span-3 lg:col-span-2 lg:px-5">
+      <div className=" col-span-3 lg:col-span-2 ">
         <Slider />
       </div>
     </div>

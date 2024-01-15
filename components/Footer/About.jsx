@@ -8,7 +8,7 @@ const About = () => {
       <h2 className="text-[18px] font-[600] mb-3 text-center lg:text-start ">
         About
       </h2>
-      <Paragraph className="text-center lg:text-start">
+      <Paragraph className="text-center lg:text-start text-grayText">
         Mosharraf Hossain School and College is an all-girls educational
         institute in Baily Road, Dhaka, Bangladesh.
       </Paragraph>
@@ -16,7 +16,7 @@ const About = () => {
         <h2 className="text-[18px] font-[600] mb-3  text-center lg:text-start">
           Mosharraf Hossain
         </h2>
-        <Paragraph className="text-center lg:text-start">
+        <Paragraph className="text-center lg:text-start text-grayText">
           {" "}
           Chairman & Founder Mosharraf Hossain School and College
         </Paragraph>

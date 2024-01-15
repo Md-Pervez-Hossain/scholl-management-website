@@ -9,7 +9,7 @@ const Admission = () => {
     <div className="   bg-[#40282C] rounded-md my-16">
       <div className="text-center lg:p-16 px-5 py-10 text-white">
         <Title>Admission</Title>
-        <Paragraph className="mb-5">
+        <Paragraph className="mb-5 text-grayText">
           Time to register for school is now! complete online registration for
           new and returning students. Our office is open to assist you with the
           admission process.

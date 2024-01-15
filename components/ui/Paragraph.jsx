@@ -4,7 +4,10 @@ import { twMerge } from "tailwind-merge";
 const Paragraph = ({ children, className }) => {
   return (
     <div
-      className={twMerge("text-base text-[#BFB7B9] leading-[28px] ", className)}
+      className={twMerge(
+        "lg:text-base text-[14px]  text-gray-500  lg:leading-[28px] leading-[24px] ",
+        className
+      )}
     >
       {children}
     </div>

@@ -46,7 +46,7 @@ const ApplicationForm = () => {
       <div className="flex items-center justify-center">
         <Title> School Application Form</Title>
       </div>
-      <div className="border border-[#999] lg:p-10 p-4 rounded-md">
+      <div className="border border-gray-300 lg:p-10 p-4 rounded-lg">
         <form onSubmit={handleSubmit(handleContact)}>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="flex flex-col">
@@ -56,7 +56,7 @@ const ApplicationForm = () => {
               <input
                 {...register("student_name", { required: true })}
                 placeholder="Enter Student Name"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.student_name && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -70,7 +70,7 @@ const ApplicationForm = () => {
                 type="email"
                 {...register("email_address", { required: true })}
                 placeholder="Enter Email Address"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.email_address && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -84,7 +84,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("phone_number", { required: true })}
                 placeholder="Enter Phone number"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.phone_number && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -98,7 +98,7 @@ const ApplicationForm = () => {
                 type="date"
                 {...register("dob", { required: true })}
                 placeholder="Enter Phone number"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.dob && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -110,7 +110,7 @@ const ApplicationForm = () => {
               </label>
               <select
                 {...register("student_class", { required: true })}
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               >
                 <option value="" selected>
                   Select Your Class
@@ -133,7 +133,7 @@ const ApplicationForm = () => {
               </label>
               <select
                 {...register("gender", { required: true })}
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               >
                 <option value="" selected>
                   Select Your Gender
@@ -156,7 +156,7 @@ const ApplicationForm = () => {
               </label>
               <select
                 {...register("blood_group", { required: true })}
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               >
                 <option value="" selected>
                   Select Your Blood Group
@@ -179,7 +179,7 @@ const ApplicationForm = () => {
               </label>
               <select
                 {...register("religion", { required: true })}
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               >
                 <option value="" selected>
                   Select Your Religion
@@ -205,7 +205,7 @@ const ApplicationForm = () => {
               {...register("message", { required: true })}
               placeholder="Type Your Message"
               type="text"
-              className="border border-[#999] px-4 py-3 rounded"
+              className="border border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.message && (
               <p className="text-[#40282C]">This Field is Required</p>
@@ -222,7 +222,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("father_name", { required: true })}
                 placeholder="Enter Father Name"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.father_name && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -236,7 +236,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("father_occupation", { required: true })}
                 placeholder="Enter Father Occupation"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.father_occupation && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -250,7 +250,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("father_phone_number", { required: true })}
                 placeholder="Enter Phone number"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.father_occupation && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -264,7 +264,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("mother_name", { required: true })}
                 placeholder="Enter Mother Name"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.mother_name && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -278,7 +278,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("mother_occupation", { required: true })}
                 placeholder="Enter Mother Occupation"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.mother_occupation && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -292,7 +292,7 @@ const ApplicationForm = () => {
                 type="text"
                 {...register("mother_phone_number", { required: true })}
                 placeholder="Enter Phone number"
-                className="border border-[#999] px-4 py-3 rounded"
+                className="border border-gray-300 px-4 py-3 rounded-lg"
               />
               {errors.father_occupation && (
                 <p className="text-[#40282C]">This Field is Required</p>
@@ -355,7 +355,7 @@ const ApplicationForm = () => {
                     type="text"
                     {...register("guardian_name", { required: true })}
                     placeholder="Enter Guardian Name"
-                    className="border border-[#999] px-4 py-3 rounded"
+                    className="border border-gray-300 px-4 py-3 rounded-lg"
                   />
                   {errors.guardian_name && (
                     <p className="text-[#40282C]">This Field is Required</p>
@@ -369,7 +369,7 @@ const ApplicationForm = () => {
                     type="text"
                     {...register("guardian_occupation", { required: true })}
                     placeholder="Enter Guardian Occupation"
-                    className="border border-[#999] px-4 py-3 rounded"
+                    className="border border-gray-300 px-4 py-3 rounded-lg"
                   />
                   {errors.father_occupation && (
                     <p className="text-[#40282C]">This Field is Required</p>
@@ -383,7 +383,7 @@ const ApplicationForm = () => {
                     type="text"
                     {...register("guardian_realation", { required: true })}
                     placeholder="Enter Guardian Relation"
-                    className="border border-[#999] px-4 py-3 rounded"
+                    className="border border-gray-300 px-4 py-3 rounded-lg"
                   />
                   {errors.guardian_realation && (
                     <p className="text-[#40282C]">This Field is Required</p>
@@ -397,7 +397,7 @@ const ApplicationForm = () => {
                     type="text"
                     {...register("guardian_phone_number", { required: true })}
                     placeholder="Enter Guardian Phone number "
-                    className="border border-[#999] px-4 py-3 rounded"
+                    className="border border-gray-300 px-4 py-3 rounded-lg"
                   />
                   {errors.guardian_phone_number && (
                     <p className="text-[#40282C]">This Field is Required</p>
@@ -422,7 +422,7 @@ const ApplicationForm = () => {
                 })
               }
               type="button"
-              className="border border-[#40282C] lg:px-4 lg:py-2 px-2 py-1 lg:text-base text-[14px] rounded-md flex items-center gap-2"
+              className="border border-text-gray-300 lg:px-4 lg:py-2 px-2 py-1 lg:text-base text-[14px] rounded-lg flex items-center gap-2"
             >
               <GoPlus />
               <span>Add New</span>
@@ -443,7 +443,7 @@ const ApplicationForm = () => {
                           required: true,
                         })}
                         placeholder="Enter Exam Name"
-                        className="border border-[#999] px-4 py-3 rounded"
+                        className="border border-gray-300 px-4 py-3 rounded-lg"
                       />
                       {errors.exam_name && (
                         <p className="text-[#40282C]">This Field is Required</p>
@@ -459,7 +459,7 @@ const ApplicationForm = () => {
                           required: true,
                         })}
                         placeholder="Enter Institute Name"
-                        className="border border-[#999] px-4 py-3 rounded"
+                        className="border border-gray-300 px-4 py-3 rounded-lg"
                       />
                       {errors.institute_name && (
                         <p className="text-[#40282C]">This Field is Required</p>
@@ -474,7 +474,7 @@ const ApplicationForm = () => {
                         {...register(`education.${index}.board_name`, {
                           required: true,
                         })}
-                        className="border border-[#999] px-4 py-3 rounded"
+                        className="border border-gray-300 px-4 py-3 rounded-lg"
                       >
                         <option value="" selected>
                           Select Your Board
@@ -501,7 +501,7 @@ const ApplicationForm = () => {
                           required: true,
                         })}
                         placeholder="Enter Passing Year"
-                        className="border border-[#999] px-4 py-3 rounded"
+                        className="border border-gray-300 px-4 py-3 rounded-lg"
                       />
                       {errors.institute_name && (
                         <p className="text-[#40282C]">This Field is Required</p>
@@ -517,7 +517,7 @@ const ApplicationForm = () => {
                           required: true,
                         })}
                         placeholder="Enter Grade"
-                        className="border border-[#999] px-4 py-3 rounded"
+                        className="border border-gray-300 px-4 py-3 rounded-lg"
                       />
                       {errors.institute_name && (
                         <p className="text-[#40282C]">This Field is Required</p>
@@ -578,7 +578,7 @@ const ApplicationForm = () => {
               type="date"
               {...register("signed_date", { required: true })}
               placeholder="Enter Date"
-              className="border mt-3 border-[#999] px-4 py-3 rounded"
+              className="border mt-3 border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.signed_date && (
               <p className="text-[#40282C]">This Field is Required</p>

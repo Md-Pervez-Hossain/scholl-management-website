@@ -5,7 +5,7 @@ import Paragraph from "../ui/Paragraph";
 
 const MorningShift = () => {
   return (
-    <div className="flex flex-col items-center text-center justify-center border border-[#40282C] lg:py-16 py-4 px-8 rounded  ">
+    <div className="flex flex-col items-center text-center justify-center border border-gray-200 lg:py-16 py-4 px-8 rounded-lg  ">
       <Title>Morning Shift</Title>
       <Paragraph className="mb-5">
         Teacher portals often include tools for lesson planning, allowing

@@ -10,8 +10,9 @@ const AcademicPage = () => {
       <Academic />
       <Container>
         <NoticeBoard />
+        <PhotoGallery />
       </Container>
-      <PhotoGallery />
+
     </div>
   );
 };

@@ -11,8 +11,8 @@ const ContactUs = () => {
         <Title>Contact us</Title>
       </div>
       <div className="grid  xl:grid-cols-3 gap-5">
-        <div className="hover:bg-[#40282C] hover:text-white transition-all duration-700 ease-in-out cursor-pointer border border-[#999] rounded-md lg:p-8 p-4   text-center">
-          <div className="lg:mb-3 flex items-center justify-center hiver:text-white">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4   text-center">
+          <div className="lg:mb-3 flex items-center justify-center hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="101"
@@ -66,7 +66,7 @@ const ContactUs = () => {
           <Heading>School Address</Heading>
           <Paragraph>Lakeside, Road-104, Gulshan-2, Dhaka Bangladesh</Paragraph>
         </div>
-        <div className="hover:bg-[#40282C] hover:text-white transition-all duration-700 ease-in-out cursor-pointer border border-[#999] rounded-md lg:p-8 p-4  text-center">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4  text-center">
           <div className="lg:mb-3 flex items-center justify-center">
             {" "}
             <svg
@@ -122,7 +122,7 @@ const ContactUs = () => {
           <Heading>Email Address</Heading>
           <Paragraph>Customer Service: mhsc926@gmail.com</Paragraph>
         </div>
-        <div className="hover:bg-[#40282C] hover:text-white transition-all duration-700 ease-in-out cursor-pointer border border-[#999] rounded-md lg:p-8 p-4 text-center ">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4 text-center ">
           <div className="lg:mb-3 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

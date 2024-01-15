@@ -35,6 +35,13 @@ const SchollEveningShift = () => {
           management tools, allowing educators to record grades, calculate
           averages, and track
         </Paragraph>
+        <Paragraph className="mt-3">
+          {" "}
+          Teacher portals often include tools for lesson planning, allowing
+          educators to create and organize lesson plans, resources, and
+          assessments. Many teacher portals provide gradebook and grade
+          management tools,
+        </Paragraph>
       </div>
     </div>
   );

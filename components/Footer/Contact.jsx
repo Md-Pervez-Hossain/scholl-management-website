@@ -23,10 +23,10 @@ const Contact = () => {
           />
         </svg>
         <div>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             +880 1700000000
           </Paragraph>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             +880 01707-388237
           </Paragraph>
         </div>
@@ -55,10 +55,10 @@ const Contact = () => {
           />
         </svg>
         <div>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             mhsc926@gmail.com
           </Paragraph>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             support@eduadmin.com
           </Paragraph>
         </div>
@@ -81,10 +81,10 @@ const Contact = () => {
           />
         </svg>
         <div>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             Kanchpur , Narayanganj
           </Paragraph>
-          <Paragraph className="text-center lg:text-start">
+          <Paragraph className="text-center lg:text-start text-grayText">
             Dhaka, Bangladesh
           </Paragraph>
         </div>

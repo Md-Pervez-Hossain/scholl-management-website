@@ -13,7 +13,7 @@ import Container from "../ui/Container";
 const PhotoGallery = () => {
   return (
     <div id="PhotoGallary" className=" lg:my-16 my-5">
-      <Title className="text-center">Photo Galler</Title>
+      <Title className="text-center">Photo Gallery</Title>
       <div className="grid md:grid-cols-4 gap-5">
         <div className=" overflow-hidden rounded-md group">
           <Image

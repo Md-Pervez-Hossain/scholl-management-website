@@ -23,6 +23,12 @@ const Chairman = () => {
           academic excellence of this School & College and enriching the quality
           of student life.”
         </Paragraph>
+        <Paragraph className="mt-3">
+          Welcome to our website. I am honored to be the Chairmen of Mosharraf
+          Hossain School & College. I have been entrusted with continuing the
+          academic excellence of this School & College and enriching the quality
+          of student life
+        </Paragraph>
       </div>
     </div>
   );

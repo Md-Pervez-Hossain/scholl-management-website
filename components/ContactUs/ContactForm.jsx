@@ -13,7 +13,7 @@ const ContactForm = () => {
     console.log(values);
   };
   return (
-    <div className="border border-[#999] lg:p-10 p-4 rounded-md">
+    <div className="border border-gray-300 lg:p-8 p-4 rounded-lg">
       <form onSubmit={handleSubmit(handleContact)}>
         <div className="grid md:grid-cols-2 gap-5">
           <div className="flex flex-col">
@@ -23,7 +23,7 @@ const ContactForm = () => {
             <input
               {...register("name", { required: true })}
               placeholder="Enter Your Name"
-              className="border border-[#999] px-4 py-3 rounded"
+              className="border border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.name && (
               <p className="text-[#40282C]">This Field is Required</p>
@@ -36,7 +36,7 @@ const ContactForm = () => {
             <input
               {...register("phone_number", { required: true })}
               placeholder="Enter Phone Number"
-              className="border border-[#999] px-4 py-3 rounded"
+              className="border border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.phone_number && (
               <p className="text-[#40282C]">This Field is Required</p>
@@ -49,7 +49,7 @@ const ContactForm = () => {
             <input
               {...register("subject", { required: true })}
               placeholder="Enter Subject"
-              className="border border-[#999] px-4 py-3 rounded"
+              className="border border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.subject && (
               <p className="text-[#40282C]">This Field is Required</p>
@@ -63,7 +63,7 @@ const ContactForm = () => {
               {...register("email", { required: true })}
               placeholder="Enter Subject"
               type="email"
-              className="border border-[#999] px-4 py-3 rounded"
+              className="border border-gray-300 px-4 py-3 rounded-lg"
             />
             {errors.email && (
               <p className="text-[#40282C]">This Field is Required</p>
@@ -78,7 +78,7 @@ const ContactForm = () => {
             {...register("message", { required: true })}
             placeholder="Type Your Message"
             type="text"
-            className="border border-[#999] px-4 py-3 rounded"
+            className="border border-gray-300 px-4 py-3 rounded-lg"
           />
           {errors.message && (
             <p className="text-[#40282C]">This Field is Required</p>
