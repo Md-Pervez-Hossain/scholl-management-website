@@ -1,7 +1,7 @@
 import React from "react";
-
 import "./HeroBanner.css";
 import PrimaryButton from "../Share/Button/PrimaryButton";
+import Link from "next/link";
 const HeroBanner = () => {
   return (
     <>
@@ -10,7 +10,11 @@ const HeroBanner = () => {
           <h2 className="lg:text-[40px] text-[24px]  font-[600]">
             Mosharraf Hossain School <br /> & College
           </h2>
-          <PrimaryButton className="mt-5 ">About us</PrimaryButton>
+          <Link href="/about">
+            <PrimaryButton className="mt-5  border-2 border-white">
+              About us
+            </PrimaryButton>
+          </Link>
         </div>
       </div>
     </>

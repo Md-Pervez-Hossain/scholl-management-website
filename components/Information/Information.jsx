@@ -36,9 +36,9 @@ const Information = () => {
             <Heading>Admission Info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white"
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
@@ -54,9 +54,9 @@ const Information = () => {
             <Heading>Academic info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white "
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
@@ -72,9 +72,9 @@ const Information = () => {
             <Heading>Rules & Regulation</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white "
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
@@ -90,9 +90,9 @@ const Information = () => {
             <Heading>Admission Info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white "
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
@@ -108,9 +108,9 @@ const Information = () => {
             <Heading>Academic info</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white "
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
@@ -126,9 +126,9 @@ const Information = () => {
             <Heading>Rules & Regulation</Heading>
             <PrimaryButton
               onClick={() => handleSyllabusDownload(ClassSixSyllabusPic)}
-              className="border-2 border-white lg:px-4 lg:py-2 py-1 px-2 text-[13px] lg:text-base rounded-md bg-transparent"
+              className="border-2 border-white "
             >
-              Get PDF
+              Download
             </PrimaryButton>
           </div>
         </div>
