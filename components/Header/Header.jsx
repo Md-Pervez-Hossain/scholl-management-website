@@ -52,7 +52,7 @@ const Header = () => {
                 />
               </Link>
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className=" text-[#40282C] bg-white shadow-2xl   p-5  text-start  w-[250px]  absolute top-14 left-0  ">
+            <NavigationMenu.Content className=" text-[#40282C] bg-white rounded-lg shadow-2xl   p-5  text-start  w-[250px]  absolute top-14 left-0  ">
               <ul className="flex flex-col gap-5">
                 <li>
                   <NavigationMenu.Link asChild>
@@ -115,7 +115,7 @@ const Header = () => {
                 />
               </Link>
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className=" text-[#40282C] bg-white shadow-2xl   p-5  text-start absolute top-14 left-0 w-[250px]  ">
+            <NavigationMenu.Content className=" text-[#40282C] bg-white rounded-lg shadow-2xl   p-5  text-start absolute top-14 left-0 w-[250px]  ">
               <ul className="flex flex-col gap-5">
                 <li>
                   <NavigationMenu.Link asChild>

@@ -16,7 +16,9 @@ const Chairman = () => {
         />
       </div>
       <div>
-        <Title>Chairmen Welcome</Title>
+        <div className="flex items-center justify-center md:justify-start">
+          <Title>Chairmen Welcome</Title>
+        </div>
         <Paragraph>
           “Welcome to our website. I am honored to be the Chairmen of Mosharraf
           Hossain School & College. I have been entrusted with continuing the

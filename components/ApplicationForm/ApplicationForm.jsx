@@ -299,7 +299,7 @@ const ApplicationForm = () => {
               )}
             </div>
           </div>
-          <div className="flex items-center flex-wrap gap-10 my-5  ">
+          <div className="flex items-center flex-wrap lg:gap-10 gap-5 my-5  ">
             <h2 className="font-[600]">If Guardian Is: </h2>
             <div className="flex items-center gap-5">
               <label
@@ -409,7 +409,7 @@ const ApplicationForm = () => {
             <></>
           )}
 
-          <div className="flex justify-between items-center gap-5 flex-wrap my-8">
+          <div className="flex justify-between items-center gap-5 flex-wrap lg:my-8 my-5">
             <Heading> Education Qualification</Heading>
             <button
               onClick={() =>

@@ -15,7 +15,7 @@ const PhotoGallery = () => {
     <div id="PhotoGallary" className=" lg:my-16 my-5">
       <Title className="text-center">Photo Gallery</Title>
       <div className="grid md:grid-cols-4 gap-5">
-        <div className=" overflow-hidden rounded-md group">
+        <div className=" overflow-hidden rounded-lg group">
           <Image
             src={img1}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -23,7 +23,7 @@ const PhotoGallery = () => {
             className="imageHover"
           />
         </div>
-        <div className=" overflow-hidden rounded-md group">
+        <div className=" overflow-hidden rounded-lg group">
           <Image
             src={img2}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -31,7 +31,7 @@ const PhotoGallery = () => {
             className="imageHover"
           />
         </div>
-        <div className="col-span-2  overflow-hidden rounded-md group">
+        <div className="col-span-2  overflow-hidden rounded-lg group">
           <Image
             src={img3}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -39,7 +39,7 @@ const PhotoGallery = () => {
             className="imageHover"
           />
         </div>
-        <div className="overflow-hidden rounded-md group">
+        <div className="overflow-hidden rounded-lg group">
           <Image
             src={img4}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -47,7 +47,7 @@ const PhotoGallery = () => {
             className="imageHover"
           />
         </div>
-        <div className="col-span-2 overflow-hidden rounded-md group">
+        <div className="col-span-2 overflow-hidden rounded-lg group">
           <Image
             src={img5}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -55,7 +55,7 @@ const PhotoGallery = () => {
             className="imageHover"
           />
         </div>
-        <div className="overflow-hidden rounded-md group">
+        <div className="overflow-hidden rounded-lg group">
           <Image
             src={img6}
             sizes="(max-width: 768px) 100vw, 33vw"

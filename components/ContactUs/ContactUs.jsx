@@ -11,7 +11,7 @@ const ContactUs = () => {
         <Title>Contact us</Title>
       </div>
       <div className="grid  xl:grid-cols-3 gap-5">
-        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4   text-center">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-300 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4   text-center">
           <div className="lg:mb-3 flex items-center justify-center hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +63,12 @@ const ContactUs = () => {
               />
             </svg>
           </div>
-          <Heading>School Address</Heading>
-          <Paragraph>Lakeside, Road-104, Gulshan-2, Dhaka Bangladesh</Paragraph>
+          <Heading className="hover:text-grayText">School Address</Heading>
+          <Paragraph className="hover:text-grayText">
+            Lakeside, Road-104, Gulshan-2, Dhaka Bangladesh
+          </Paragraph>
         </div>
-        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4  text-center">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-300 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4  text-center">
           <div className="lg:mb-3 flex items-center justify-center">
             {" "}
             <svg
@@ -119,10 +121,12 @@ const ContactUs = () => {
               />
             </svg>
           </div>
-          <Heading>Email Address</Heading>
-          <Paragraph>Customer Service: mhsc926@gmail.com</Paragraph>
+          <Heading className="hover:text-grayText">Email Address</Heading>
+          <Paragraph className="hover:text-grayText">
+            Customer Service: mhsc926@gmail.com
+          </Paragraph>
         </div>
-        <div className="hover:bg-primary hover:text-grayText transition-all duration-700 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4 text-center ">
+        <div className="hover:bg-primary hover:text-grayText transition-all duration-300 ease-in-out cursor-pointer border border-gray-300 rounded-md lg:p-8 p-4 text-center ">
           <div className="lg:mb-3 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -174,8 +178,10 @@ const ContactUs = () => {
               />
             </svg>
           </div>
-          <Heading>Contact Number</Heading>
-          <Paragraph>Customer Service: 01583036920 01603628419</Paragraph>
+          <Heading className="hover:text-grayText">Contact Number</Heading>
+          <Paragraph className="hover:text-grayText">
+            Customer Service: 01583036920 01603628419
+          </Paragraph>
         </div>
       </div>
       <div className="lg:my-16 my-5">

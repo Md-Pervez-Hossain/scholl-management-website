@@ -6,7 +6,7 @@ import Paragraph from "../ui/Paragraph";
 
 const Admission = () => {
   return (
-    <div className="   bg-[#40282C] rounded-lg my-16">
+    <div className="   bg-[#40282C] rounded-lg lg:my-16 my-5">
       <div className="text-center lg:p-16 px-5 py-10 text-white">
         <Title>Admission</Title>
         <Paragraph className="mb-5 text-grayText">
