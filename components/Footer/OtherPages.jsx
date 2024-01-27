@@ -13,12 +13,12 @@ const OtherPages = () => {
             Support
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/privacy-policy">
           <p className="text-[16px] text-[#BFB7B9] text-center lg:text-start">
             Privacy Policy
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/terms-condition">
           <p className="text-[16px] text-[#BFB7B9] text-center lg:text-start">
             Terms & Condition
           </p>

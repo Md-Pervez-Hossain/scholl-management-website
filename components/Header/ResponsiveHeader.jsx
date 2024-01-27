@@ -25,7 +25,7 @@ const ResponsiveHeader = () => {
             <div className="hidden lg:flex ">
               <Header />
             </div>
-            <div className="lg:hidden flex justify-end px-5 ">
+            <div className="lg:hidden flex justify-end lg:px-5 ">
               <button onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? (
                   <IoClose className="text-white text-3xl" />

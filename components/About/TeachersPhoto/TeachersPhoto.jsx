@@ -107,8 +107,9 @@ const TeachersPhoto = () => {
                       alt=""
                       style={{ objectFit: "contain" }}
                       width={1000}
+                      height={500}
                       src={photo.img}
-                      className="imageHover "
+                      className="imageHover rounded-t-md "
                     />
                   </div>
                   <div className="shadow-lg lg:shadow-none p-3 rounded-md">
